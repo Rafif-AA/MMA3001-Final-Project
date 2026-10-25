@@ -172,19 +172,13 @@ Output names can vary with the installed Ultralytics version. Save required outp
 
 For activation analysis, choose the dummy-input resolution deliberately. The current analysis cells use 640 x 640 inputs, including in the notebooks trained at 1280 x 1280.
 
-## Reproducibility and current limitations
+## Limitations and future work
 
-The final report describes the completed experimental study, while some committed notebooks retain outputs from earlier or incomplete runs. Before using this repository to reproduce the reported results:
+The models have been evaluated using the project dataset but have not yet been tested under real-world production-line conditions. Their performance in an operating food-packaging facility therefore remains unverified.
 
-- Reconcile dataset versions. Saved notebook logs show 3,349 training images and 120 validation images, differing from the report's 1,746/115/76 split.
-- Confirm the hardware and software environment. The report describes a Colab G4 GPU; saved logs include Tesla T4 and NVIDIA A100 runs.
-- Refresh stale outputs. Trial 3 requests 200 epochs, but its saved training log describes a 100-epoch run. Trials 2 and 4 do not contain complete saved training logs.
-- Correct run paths. Trial 2's saved log points to `train-2`, while its analysis reads `train-4`. Trial 4's saved log points to `train`, while its activation analysis reads `train-4`.
-- Keep evaluation splits, checkpoint selection, confidence settings, and timing conditions consistent. The committed notebooks do not establish a separate held-out test evaluation corresponding to every reported metric.
+Practical deployment may introduce changes in lighting, camera position, conveyor speed, motion blur, packaging materials, and product appearance. These conditions could affect detection accuracy, missed-defect rates, false alarms, and processing time compared with the reported experimental results.
 
-Model evaluation plots measure detector performance. An automated software test suite and test report remain separate deliverables.
-
-Future work includes expanding underrepresented classes, improving packaging-error detection, tuning confidence thresholds, repeating trials, and verifying held-out test performance under consistent conditions before production-line use.
+Future work should evaluate the selected model on new images and video captured from an actual production line, including a wider range of defects and operating conditions. Confidence thresholds should be tuned to balance missed defects against false alarms, and inference speed should be measured on the intended deployment hardware. Further testing and refinement are needed before the model can be considered ready for routine industrial inspection.
 
 ## Acknowledgements and AI usage
 
