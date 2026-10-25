@@ -1,0 +1,12 @@
+# Install a CPU PyTorch build first if you do not need GPU support:
+# python -m pip install torch --index-url https://download.pytorch.org/whl/cpu
+pytest>=8,<10
+pytest-html>=4,<5
+torch>=2.5
+numpy>=1.26
+pandas>=2.2
+matplotlib>=3.9
+Pillow>=10
+seaborn>=0.13,<0.14
+tzdata
+

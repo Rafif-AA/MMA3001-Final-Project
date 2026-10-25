@@ -6,6 +6,20 @@ The engineering objective is to identify defective packages while balancing miss
 
 **Selected configuration:** Trial 2 - YOLO26 Nano, 100 training epochs, and 1280 x 1280 input images. The final report selects this configuration for its balance of detection performance, class recall, and reported inference time.
 
+## Software tests and test report
+
+The [test suite](tests/README.md) runs **78 CPU test cases** against the ten documented notebook snapshots. The recorded run passed all 78 cases, with no failures, errors or skipped cases.
+
+Tests cover activation counts and forward hooks, model-state restoration, evaluation settings, missing plots, confusion-matrix normalisation, timing arithmetic, and roofline calculations. Real numerical and plotting libraries are used; external YOLO loading/validation and FLOP profiling use controlled test doubles. These checks do not establish detector accuracy, real GPU timing, or production-line performance.
+
+See the [HTML test report](reports/test_report.html), [machine-readable summary](reports/test_summary.json), and [setup/rerun instructions](tests/README.md). Download the HTML report and open it in a browser to view the rendered results.
+
+After installing the test requirements, run:
+
+```text
+python -m pytest tests --html=reports/test_report.html --self-contained-html --junitxml=reports/junit.xml
+```
+
 ## HTML source documentation
 
 The [HTML documentation](docs/index.html) covers all ten notebooks from the [shared trial-code folder](https://drive.google.com/drive/folders/1L7CqHadYiNWEeMiAlu7-QRTLIzC0RylO): five training notebooks and five saved-weight evaluation notebooks. It includes setup and execution order, function signatures and docstrings, parameter and return descriptions, inputs and outputs, and line-numbered source code.
@@ -53,7 +67,7 @@ The following files are on the `main` branch.
 
 The notebooks contain model training, result visualisation, and activation analysis using PyTorch forward hooks. Trials 4 and 5 also contain cells for downloading run outputs and copying a checkpoint to Google Drive.
 
-The dataset, trained checkpoints, and final report are supplied separately; they are not included in this repository. HTML source documentation is available in [`docs/index.html`](docs/index.html). An automated software test suite/report has not yet been added.
+The dataset, trained checkpoints, and final report are supplied separately; they are not included in this repository. HTML source documentation is available in [`docs/index.html`](docs/index.html). Automated tests and their recorded results are available under [`tests/`](tests/README.md) and [`reports/`](reports/README.md).
 
 ## Dataset
 

@@ -1,0 +1,521 @@
+{
+  "project": "MMA3001",
+  "scope": "CPU software unit tests of the ten documented source snapshots. Real PyTorch, NumPy, pandas, Pillow, Matplotlib and Seaborn are used. YOLO checkpoint loading/validation and FLOP profiling are replaced by controlled test doubles. No model training, real checkpoint validation, accuracy evaluation, GPU timing, or production-line testing is performed.",
+  "started_at": "2026-10-25T19:42:12.921914+11:00",
+  "finished_at": "2026-10-25T19:42:15.724225+11:00",
+  "timezone": "Australia/Sydney",
+  "exit_code": 0,
+  "collected": 78,
+  "results": {
+    "passed": 78,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0,
+    "xfailed": 0,
+    "xpassed": 0
+  },
+  "duration_seconds": 2.8072207999648526,
+  "python": "3.12.14",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "libraries": {
+    "pytest": "9.1.1",
+    "pytest-html": "4.2.0",
+    "torch": "2.14.1+cpu",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "matplotlib": "3.11.2",
+    "Pillow": "13.0.0",
+    "seaborn": "0.13.2"
+  },
+  "source_snapshot_sha256": {
+    "MMA3001_Final_Project_Trial_4_5.ipynb": "7b5cb9f2507db39ed62fa6d6bc0b2bdb378c41cadd7465e96de0c6882abe0732",
+    "MMA3001_Final_Project_Trial_3_5.ipynb": "e4b48dfd78a2c9b43a95b3da547a1a5d330871648162e490bc4db42b91f7e843",
+    "MMA3001_Final_Project_Trial_2_5.ipynb": "bab0d7fa0f5e57622edeb529d5ad487318f86894022be2c7149f0ca0541a4850",
+    "MMA3001_Final_Project_Trial_1_5.ipynb": "f2e449d90a502821938c9fcba4aed44d75c3f6a0f66da0c861e62f5dc2073231",
+    "MMA3001_Final_Project_Trial_5_5.ipynb": "48dcd9cf6b28a9f90dbba68864744e113680b82cd800147f0fa9f8ea61c6b16f",
+    "MMA3001_Final_Project_Trial_2.ipynb": "d9d5153706ec43d040a613193e56cc3b576229c2754af89d34e39f8c29a7448c",
+    "MMA3001_Final_Project_Trial_5.ipynb": "a0d47642d46b8df2cae023e66e39ad6141ae88e6ba267678ee7d958aa3c846f5",
+    "MMA3001_Final_Project_Trial_4.ipynb": "936677898145b63e876b093b02e40f8466efeb6ded30d93f54e71176654dea28",
+    "MMA3001_Final_Project_Trial_1.ipynb": "80f8b13f3fc0b08b65d04c4eacb0038c6cb2d0070eb0a21cf87c279358eaec99",
+    "MMA3001_Final_Project_Trial_3.ipynb": "b901d10da8a341ca48497390a361b2a14414242d4dd37a6ba61a7840f3386cad"
+  },
+  "test_suite_sha256": {
+    "tests/conftest.py": "15093922e32ac0666047e3f179f2c12b88b045c301557880fdc4d366ccaba2b3",
+    "tests/notebook_support.py": "16a383960f6162c3ed23fd9da2bcac2bdedb963fed619a1c174a3ffd7475e952",
+    "tests/test_activations.py": "3c1312bda6a7b0a3f972680ab039d98ff8c42a9e44f5e3d123bca3df2e309d0a",
+    "tests/test_analysis.py": "e9e2f06624c758fbe0140e43e05e63cfd870436ceefa9a6ba845bf76a6c6dd84",
+    "tests/test_evaluation.py": "d90cf04ad2ee79072d3faf9fe6ce11655c84fbd759a0875b070681efdd5d0025",
+    "pytest.ini": "8c388a72af870811bc537c0e87f9e1e42b733d6d72a974441d71fbfc940908da",
+    "requirements-test.txt": "c86af342f2c45ae921e8f22eaed5300040c3f2d759cab6bed8990e5a173d833f"
+  },
+  "cases": [
+    {
+      "id": "tests/test_activations.py::test_failure_removes_new_hooks_and_preserves_existing_hooks[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0004705000901594758,
+      "description": "A failing forward pass propagates its error while restoring modes and removing added hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_failure_removes_new_hooks_and_preserves_existing_hooks[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.00040680007077753544,
+      "description": "A failing forward pass propagates its error while restoring modes and removing added hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_failure_removes_new_hooks_and_preserves_existing_hooks[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.00043439993169158697,
+      "description": "A failing forward pass propagates its error while restoring modes and removing added hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_failure_removes_new_hooks_and_preserves_existing_hooks[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0003885000478476286,
+      "description": "A failing forward pass propagates its error while restoring modes and removing added hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_failure_removes_new_hooks_and_preserves_existing_hooks[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.00041450001299381256,
+      "description": "A failing forward pass propagates its error while restoring modes and removing added hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_forward_disables_gradients_and_retains_existing_hook[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006983999628573656,
+      "description": "A successful profile disables gradient tracking, preserves a pre-existing hook and cleans up its own hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_forward_disables_gradients_and_retains_existing_hook[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006280000088736415,
+      "description": "A successful profile disables gradient tracking, preserves a pre-existing hook and cleans up its own hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_forward_disables_gradients_and_retains_existing_hook[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006345999427139759,
+      "description": "A successful profile disables gradient tracking, preserves a pre-existing hook and cleans up its own hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_forward_disables_gradients_and_retains_existing_hook[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0005635999841615558,
+      "description": "A successful profile disables gradient tracking, preserves a pre-existing hook and cleans up its own hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_forward_disables_gradients_and_retains_existing_hook[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0005969000048935413,
+      "description": "A successful profile disables gradient tracking, preserves a pre-existing hook and cleans up its own hooks."
+    },
+    {
+      "id": "tests/test_activations.py::test_known_layer_shapes_and_counts[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.002189300023019314,
+      "description": "A known network returns exact leaf shapes and per-image activation counts."
+    },
+    {
+      "id": "tests/test_activations.py::test_known_layer_shapes_and_counts[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0015863999724388123,
+      "description": "A known network returns exact leaf shapes and per-image activation counts."
+    },
+    {
+      "id": "tests/test_activations.py::test_known_layer_shapes_and_counts[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0012614999432116747,
+      "description": "A known network returns exact leaf shapes and per-image activation counts."
+    },
+    {
+      "id": "tests/test_activations.py::test_known_layer_shapes_and_counts[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0009521999163553119,
+      "description": "A known network returns exact leaf shapes and per-image activation counts."
+    },
+    {
+      "id": "tests/test_activations.py::test_known_layer_shapes_and_counts[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0008391999872401357,
+      "description": "A known network returns exact leaf shapes and per-image activation counts."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_counts_one_image_not_the_whole_batch[trial-1-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007155999774113297,
+      "description": "The original training notebook hook counts one image from a two-image tensor batch."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_counts_one_image_not_the_whole_batch[trial-2-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006818999536335468,
+      "description": "The original training notebook hook counts one image from a two-image tensor batch."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_counts_one_image_not_the_whole_batch[trial-3-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006620000349357724,
+      "description": "The original training notebook hook counts one image from a two-image tensor batch."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_counts_one_image_not_the_whole_batch[trial-4-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006482999306172132,
+      "description": "The original training notebook hook counts one image from a two-image tensor batch."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_counts_one_image_not_the_whole_batch[trial-5-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006423000013455749,
+      "description": "The original training notebook hook counts one image from a two-image tensor batch."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_ignores_non_tensor_output[trial-1-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.000673700007610023,
+      "description": "The original hook safely ignores a dictionary output rather than counting or crashing on it."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_ignores_non_tensor_output[trial-2-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006450999062508345,
+      "description": "The original hook safely ignores a dictionary output rather than counting or crashing on it."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_ignores_non_tensor_output[trial-3-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.00065179995726794,
+      "description": "The original hook safely ignores a dictionary output rather than counting or crashing on it."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_ignores_non_tensor_output[trial-4-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.000714199966751039,
+      "description": "The original hook safely ignores a dictionary output rather than counting or crashing on it."
+    },
+    {
+      "id": "tests/test_activations.py::test_original_hook_ignores_non_tensor_output[trial-5-original]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006535000866279006,
+      "description": "The original hook safely ignores a dictionary output rather than counting or crashing on it."
+    },
+    {
+      "id": "tests/test_activations.py::test_preserves_float64_and_mixed_training_modes[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0011168000055477023,
+      "description": "Profiling uses the network dtype and restores every module's original training mode."
+    },
+    {
+      "id": "tests/test_activations.py::test_preserves_float64_and_mixed_training_modes[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0008092999923974276,
+      "description": "Profiling uses the network dtype and restores every module's original training mode."
+    },
+    {
+      "id": "tests/test_activations.py::test_preserves_float64_and_mixed_training_modes[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007336999988183379,
+      "description": "Profiling uses the network dtype and restores every module's original training mode."
+    },
+    {
+      "id": "tests/test_activations.py::test_preserves_float64_and_mixed_training_modes[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0008033999474719167,
+      "description": "Profiling uses the network dtype and restores every module's original training mode."
+    },
+    {
+      "id": "tests/test_activations.py::test_preserves_float64_and_mixed_training_modes[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007471999851986766,
+      "description": "Profiling uses the network dtype and restores every module's original training mode."
+    },
+    {
+      "id": "tests/test_activations.py::test_profile_metadata_identifies_model_and_resolution[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.00221070006955415,
+      "description": "The two cache-aware profiling variants tag activation tables with model identity and image size."
+    },
+    {
+      "id": "tests/test_activations.py::test_profile_metadata_identifies_model_and_resolution[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0013994999462738633,
+      "description": "The two cache-aware profiling variants tag activation tables with model identity and image size."
+    },
+    {
+      "id": "tests/test_activations.py::test_records_repeated_invocations_of_shared_leaf[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007118999492377043,
+      "description": "Reusing a leaf twice records both invocations instead of silently deduplicating activations."
+    },
+    {
+      "id": "tests/test_activations.py::test_records_repeated_invocations_of_shared_leaf[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007120000664144754,
+      "description": "Reusing a leaf twice records both invocations instead of silently deduplicating activations."
+    },
+    {
+      "id": "tests/test_activations.py::test_records_repeated_invocations_of_shared_leaf[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007118999492377043,
+      "description": "Reusing a leaf twice records both invocations instead of silently deduplicating activations."
+    },
+    {
+      "id": "tests/test_activations.py::test_records_repeated_invocations_of_shared_leaf[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007066999096423388,
+      "description": "Reusing a leaf twice records both invocations instead of silently deduplicating activations."
+    },
+    {
+      "id": "tests/test_activations.py::test_records_repeated_invocations_of_shared_leaf[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007038000039756298,
+      "description": "Reusing a leaf twice records both invocations instead of silently deduplicating activations."
+    },
+    {
+      "id": "tests/test_activations.py::test_skips_non_tensor_leaf_outputs[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.000700899981893599,
+      "description": "Dictionary outputs are skipped without losing records for earlier tensor-producing leaves."
+    },
+    {
+      "id": "tests/test_activations.py::test_skips_non_tensor_leaf_outputs[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007154999766498804,
+      "description": "Dictionary outputs are skipped without losing records for earlier tensor-producing leaves."
+    },
+    {
+      "id": "tests/test_activations.py::test_skips_non_tensor_leaf_outputs[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006378000834956765,
+      "description": "Dictionary outputs are skipped without losing records for earlier tensor-producing leaves."
+    },
+    {
+      "id": "tests/test_activations.py::test_skips_non_tensor_leaf_outputs[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006209000712260604,
+      "description": "Dictionary outputs are skipped without losing records for earlier tensor-producing leaves."
+    },
+    {
+      "id": "tests/test_activations.py::test_skips_non_tensor_leaf_outputs[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006050999509170651,
+      "description": "Dictionary outputs are skipped without losing records for earlier tensor-producing leaves."
+    },
+    {
+      "id": "tests/test_analysis.py::test_confusion_matrix_preserves_denominators_and_handles_zero_columns[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.37976100004743785,
+      "description": "Filtering wrinkle after normalisation preserves true-class denominators, zero columns and background."
+    },
+    {
+      "id": "tests/test_analysis.py::test_confusion_matrix_preserves_denominators_and_handles_zero_columns[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.27628649992402643,
+      "description": "Filtering wrinkle after normalisation preserves true-class denominators, zero columns and background."
+    },
+    {
+      "id": "tests/test_analysis.py::test_confusion_matrix_preserves_denominators_and_handles_zero_columns[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.2814614000963047,
+      "description": "Filtering wrinkle after normalisation preserves true-class denominators, zero columns and background."
+    },
+    {
+      "id": "tests/test_analysis.py::test_confusion_matrix_preserves_denominators_and_handles_zero_columns[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.2816573000745848,
+      "description": "Filtering wrinkle after normalisation preserves true-class denominators, zero columns and background."
+    },
+    {
+      "id": "tests/test_analysis.py::test_confusion_matrix_preserves_denominators_and_handles_zero_columns[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.280192399979569,
+      "description": "Filtering wrinkle after normalisation preserves true-class denominators, zero columns and background."
+    },
+    {
+      "id": "tests/test_analysis.py::test_roofline_profiles_a_copy_and_uses_consistent_units[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.014217699994333088,
+      "description": "The 1280 roofline cell profiles an FP32 copy and calculates a known intensity and ceiling."
+    },
+    {
+      "id": "tests/test_analysis.py::test_roofline_profiles_a_copy_and_uses_consistent_units[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.008377599995583296,
+      "description": "The 1280 roofline cell profiles an FP32 copy and calculates a known intensity and ceiling."
+    },
+    {
+      "id": "tests/test_analysis.py::test_roofline_rejects_invalid_profiler_results[nan-flops-trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.06219930003862828,
+      "description": "Zero or non-finite profiler results raise a clear error instead of a plausible-looking roofline."
+    },
+    {
+      "id": "tests/test_analysis.py::test_roofline_rejects_invalid_profiler_results[nan-flops-trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.010484500089660287,
+      "description": "Zero or non-finite profiler results raise a clear error instead of a plausible-looking roofline."
+    },
+    {
+      "id": "tests/test_analysis.py::test_roofline_rejects_invalid_profiler_results[zero-flops-trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.008610900025814772,
+      "description": "Zero or non-finite profiler results raise a clear error instead of a plausible-looking roofline."
+    },
+    {
+      "id": "tests/test_analysis.py::test_roofline_rejects_invalid_profiler_results[zero-flops-trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.008118199999444187,
+      "description": "Zero or non-finite profiler results raise a clear error instead of a plausible-looking roofline."
+    },
+    {
+      "id": "tests/test_analysis.py::test_timing_separates_inference_from_total_processing[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007395000429823995,
+      "description": "Known validation speed values produce separate, correct inference and total-processing times."
+    },
+    {
+      "id": "tests/test_analysis.py::test_timing_separates_inference_from_total_processing[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006413999944925308,
+      "description": "Known validation speed values produce separate, correct inference and total-processing times."
+    },
+    {
+      "id": "tests/test_analysis.py::test_timing_separates_inference_from_total_processing[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006911000236868858,
+      "description": "Known validation speed values produce separate, correct inference and total-processing times."
+    },
+    {
+      "id": "tests/test_analysis.py::test_timing_separates_inference_from_total_processing[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0006017000414431095,
+      "description": "Known validation speed values produce separate, correct inference and total-processing times."
+    },
+    {
+      "id": "tests/test_analysis.py::test_timing_separates_inference_from_total_processing[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0005294999573379755,
+      "description": "Known validation speed values produce separate, correct inference and total-processing times."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_checkpoint_errors_are_not_silenced[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0010870000114664435,
+      "description": "A checkpoint-loading failure reaches the caller instead of producing misleading plots or results."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_checkpoint_errors_are_not_silenced[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0009198000188916922,
+      "description": "A checkpoint-loading failure reaches the caller instead of producing misleading plots or results."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_checkpoint_errors_are_not_silenced[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0008167000487446785,
+      "description": "A checkpoint-loading failure reaches the caller instead of producing misleading plots or results."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_checkpoint_errors_are_not_silenced[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0007928999839350581,
+      "description": "A checkpoint-loading failure reaches the caller instead of producing misleading plots or results."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_checkpoint_errors_are_not_silenced[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.0008113000076264143,
+      "description": "A checkpoint-loading failure reaches the caller instead of producing misleading plots or results."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_default_validation_configuration[trial-1-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.03530769993085414,
+      "description": "Calling evaluation without overrides uses the notebook's 1280-pixel, batch-four defaults."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_default_validation_configuration[trial-2-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.03529629996046424,
+      "description": "Calling evaluation without overrides uses the notebook's 1280-pixel, batch-four defaults."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_default_validation_configuration[trial-3-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.03673890000209212,
+      "description": "Calling evaluation without overrides uses the notebook's 1280-pixel, batch-four defaults."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_default_validation_configuration[trial-4-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.034882099949754775,
+      "description": "Calling evaluation without overrides uses the notebook's 1280-pixel, batch-four defaults."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_default_validation_configuration[trial-5-saved]",
+      "outcome": "passed",
+      "duration_seconds": 0.03377300000283867,
+      "description": "Calling evaluation without overrides uses the notebook's 1280-pixel, batch-four defaults."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-1-saved-all-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.04594119999092072,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-1-saved-missing-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.03754290007054806,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-2-saved-all-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.04266769997775555,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-2-saved-missing-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.040007099974900484,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-3-saved-all-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.04281560005620122,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-3-saved-missing-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.037709000054746866,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-4-saved-all-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.0451741999713704,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-4-saved-missing-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.03953479998745024,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-5-saved-all-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.04516630002763122,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    },
+    {
+      "id": "tests/test_evaluation.py::test_loads_actual_output_curves_and_reports_missing_files[trial-5-saved-missing-curves]",
+      "outcome": "passed",
+      "duration_seconds": 0.095033899997361,
+      "description": "Evaluation reads curves from the returned run directory and visibly reports missing plot files."
+    }
+  ]
+}
