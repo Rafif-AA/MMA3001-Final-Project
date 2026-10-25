@@ -6,6 +6,18 @@ The engineering objective is to identify defective packages while balancing miss
 
 **Selected configuration:** Trial 2 - YOLO26 Nano, 100 training epochs, and 1280 x 1280 input images. The final report selects this configuration for its balance of detection performance, class recall, and reported inference time.
 
+## HTML source documentation
+
+The [HTML documentation](docs/index.html) covers all ten notebooks from the [shared trial-code folder](https://drive.google.com/drive/folders/1L7CqHadYiNWEeMiAlu7-QRTLIzC0RylO): five training notebooks and five saved-weight evaluation notebooks. It includes setup and execution order, function signatures and docstrings, parameter and return descriptions, inputs and outputs, and line-numbered source code.
+
+To view it, download this repository as a ZIP, extract it, and open `docs/index.html` in a browser. Keep the `docs` folder intact so its pages and assets remain available. The documentation works offline and does not require a web server. GitHub's file view displays the HTML source rather than the rendered pages.
+
+Source-only notebook snapshots and their provenance are included in `docs/source-notebooks/`. They reflect the supplied Drive files and may differ from the earlier notebooks at the repository root. To rebuild the HTML with Python's standard library, run:
+
+```text
+python docs/generate_docs.py
+```
+
 ## Branches
 
 This repository contains three branches:
@@ -41,7 +53,7 @@ The following files are on the `main` branch.
 
 The notebooks contain model training, result visualisation, and activation analysis using PyTorch forward hooks. Trials 4 and 5 also contain cells for downloading run outputs and copying a checkpoint to Google Drive.
 
-The dataset, trained checkpoints, and final report are supplied separately; they are not included in this repository. HTML source documentation and an automated software test suite/report have not yet been added.
+The dataset, trained checkpoints, and final report are supplied separately; they are not included in this repository. HTML source documentation is available in [`docs/index.html`](docs/index.html). An automated software test suite/report has not yet been added.
 
 ## Dataset
 
