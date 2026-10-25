@@ -45,7 +45,11 @@ The dataset, trained checkpoints, and final report are supplied separately; they
 
 ## Dataset
 
-The project considers four defect classes:
+The dataset used in this project is [Pork Rasher Error(Packaging)](https://universe.roboflow.com/hello-2aqe0/pork-rasher-error-packaging), published by **Hello** on Roboflow Universe. The source dataset is listed under the [Creative Commons Attribution 4.0 International (CC BY 4.0) licence](https://creativecommons.org/licenses/by/4.0/).
+
+Download the dataset from the linked project in a YOLO-compatible format and place it in Google Drive before running the notebooks. Use the dataset version and preparation settings corresponding to the experiments; the split below is the one reported in the final report.
+
+The source project also lists a `wrinkle` class. The evaluation presented in this project focuses on the following four defect classes:
 
 - Loose meat
 - Packaging error
@@ -205,6 +209,8 @@ Future work should evaluate the selected model on new images and video captured 
 ## Acknowledgements and AI usage
 
 This project uses [Ultralytics YOLO](https://github.com/ultralytics/ultralytics) and its pretrained model weights. Training and analysis were carried out using Google Colab and PyTorch.
+
+Dataset credit: **Hello**, *Pork Rasher Error(Packaging)*, Roboflow Universe (2025), [source project](https://universe.roboflow.com/hello-2aqe0/pork-rasher-error-packaging), [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 
 As disclosed in the final report, ChatGPT generated most of the project code, with author modifications mainly to file paths, chart titles, and other minor settings. AI assistance was also used to draft and refine report text, present evaluation results, and organise the report under the author's supervision. This README was prepared with AI assistance from that report and a review of the committed notebooks.
 
