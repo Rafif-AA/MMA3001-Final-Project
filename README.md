@@ -6,7 +6,29 @@ The engineering objective is to identify defective packages while balancing miss
 
 **Selected configuration:** Trial 2 - YOLO26 Nano, 100 training epochs, and 1280 x 1280 input images. The final report selects this configuration for its balance of detection performance, class recall, and reported inference time.
 
+## Branches
+
+This repository contains three branches:
+
+| Branch | Purpose |
+| --- | --- |
+| [main](https://github.com/Rafif-AA/MMA3001-Final-Project/tree/main) | Main project branch containing the Google Colab training notebooks, trial configurations, and project documentation. |
+| [PyCharm-Migration-1](https://github.com/Rafif-AA/MMA3001-Final-Project/tree/PyCharm-Migration-1) | Earlier work towards moving development from Google Colab to PyCharm. |
+| [Using-The-Trained-Weights](https://github.com/Rafif-AA/MMA3001-Final-Project/tree/Using-The-Trained-Weights) | Code that uses previously trained model weights without repeating model training. |
+
+### PyCharm migration
+
+Migration to PyCharm was initially planned because the free Google Colab runtime limits repeatedly interrupted development. Paid GPU access was later purchased through Colab, allowing the project to continue there. The migration was therefore not pursued further, and Google Colab remained the main development and training environment. The `PyCharm-Migration-1` branch preserves that earlier migration work.
+
+### Using trained weights
+
+The `Using-The-Trained-Weights` branch is intended for running code with an existing trained model rather than training a model from scratch. Supply the appropriate trained checkpoint, such as `best.pt`, and update the weight-file paths in the code before running it. Any input images or dataset files required by the code must also be available.
+
+Use `main` to follow the training experiments described below, or switch to `Using-The-Trained-Weights` when reusing a model that has already been trained.
+
 ## Repository contents
+
+The following files are on the `main` branch.
 
 | File | Purpose |
 | --- | --- |
