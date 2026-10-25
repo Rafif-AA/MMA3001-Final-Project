@@ -67,6 +67,20 @@ The following files are on the `main` branch.
 
 The notebooks contain model training, result visualisation, and activation analysis using PyTorch forward hooks. Trials 4 and 5 also contain cells for downloading run outputs and copying a checkpoint to Google Drive.
 
+### Refined trial code: Trials 1.5–5.5
+
+Trials **1.5, 2.5, 3.5, 4.5 and 5.5** are more refined versions of the original Trial 1–5 code. They improve the code organisation, documentation, evaluation workflow, result visualisation and model analysis. These notebooks reuse the corresponding trial's trained weights, so the model does not need to be trained again to run the evaluation and analysis.
+
+The `.5` suffix identifies a refinement of the original trial code, rather than a separate training configuration. The original notebook titles and filenames use a comma, such as `Trial 2,5`, for the same numbering.
+
+| Trial | Notebook | Purpose |
+| --- | --- | --- |
+| 1.5 | [Colab notebook](https://colab.research.google.com/drive/1AgfPFZ6hVkYVSjMztQ-1x8QFqB9uounl) · [source snapshot](docs/source-notebooks/MMA3001_Final_Project_Trial_1_5.ipynb) | Refined version of Trial 1: evaluation, visualisation and model analysis using its trained weights. |
+| 2.5 | [MMA3001_Final_Project_Trial_2,5.ipynb](MMA3001_Final_Project_Trial_2,5.ipynb) | Refined version of Trial 2: evaluation, visualisation and model analysis using its trained weights. |
+| 3.5 | [MMA3001_Final_Project_Trial_3,5.ipynb](MMA3001_Final_Project_Trial_3,5.ipynb) | Refined version of Trial 3: evaluation, visualisation and model analysis using its trained weights. |
+| 4.5 | [MMA3001_Final_Project_Trial_4,5.ipynb](MMA3001_Final_Project_Trial_4,5.ipynb) | Refined version of Trial 4: evaluation, visualisation and model analysis using its trained weights. |
+| 5.5 | [MMA3001_Final_Project_Trial_5,5.ipynb](MMA3001_Final_Project_Trial_5,5.ipynb) | Refined version of Trial 5: evaluation, visualisation and model analysis using its trained weights. |
+
 The dataset, trained checkpoints, and final report are supplied separately; they are not included in this repository. HTML source documentation is available in [`docs/index.html`](docs/index.html). Automated tests and their recorded results are available under [`tests/`](tests/README.md) and [`reports/`](reports/README.md).
 
 ## Dataset
